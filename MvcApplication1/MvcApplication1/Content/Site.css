@@ -63,7 +63,6 @@ var, .svar { color: #cc6000; font-weight: bold; }
 .Identifier { color: #008b8b; }
 .Statement { color: #a52a2a; font-weight: bold; }
 
-#container { position: relative; }
-#imageView { border: 1px solid #000; }
-#imageTemp { position: static; top: 1px; left: 1px; }
+#imageView { border: 1px solid #000 }
+
 
