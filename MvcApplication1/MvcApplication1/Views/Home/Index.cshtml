@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <p>
+                To learn more about ASP.NET MVC visit
+                <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
+                The page features <mark>videos, tutorials, and samples</mark> to help you get the most from ASP.NET MVC.
+                If you have any questions about ASP.NET MVC visit
+                <a href="http://forums.asp.net/1146.aspx/1?MVC" title="ASP.NET MVC Forum">our forums</a>.
+            </p>
+        </div>
+    </section>
+}
+
+  <head>
+    <meta charset="utf-8">
+    <title>Whiteboard</title>
+    <style type="Content/Site.css"></style>
+  </head>
+  <body>
+    <p><label>Drawing tool: <select id="dtool">
+        <option value="line">Line</option>
+        <option value="rect">Rectangle</option>
+        <option value="pencil">Pencil</option>
+    </select></label></p>
+
+    <div id="container">
+      <canvas id="imageView" width="900" height="600">
+        <p>Unfortunately, your browser is currently unsupported by our web 
+        application.  We are sorry for the inconvenience. Please use one of the 
+        supported browsers listed below, or draw the image you want using an 
+        offline tool.</p>
+        <p>Supported browsers: <a href="http://www.opera.com">Opera</a>, <a 
+          href="http://www.mozilla.com">Firefox</a>, <a 
+          href="http://www.apple.com/safari">Safari</a>, and <a 
+          href="http://www.konqueror.org">Konqueror</a>.</p>
+      </canvas>
+    </div>
+   
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    @*<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>*@  
+    <script type="text/javascript" src="Scripts/whiteboard.js"></script> 
+    @*<script type="text/javascript" src="Scripts/whiteboardtutorial.js"></script>*@
+  </body>
+
+
+
+
